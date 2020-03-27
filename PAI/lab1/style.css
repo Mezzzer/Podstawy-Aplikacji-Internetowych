@@ -1,0 +1,38 @@
+li { list-style-type: square}
+#cena { 
+    color: red; 
+    font-weight: bold;
+}
+#cena,#l_stron,#okladka,#wydawnictwo{
+    font-weight: bold;
+}
+#rebis{
+    text-decoration: underline;
+}
+.wstep {
+    font-style: italic
+}
+td img{
+    border-style: solid;
+    border-color: blue;
+    width: 50%;
+}
+td img:hover{
+    border-style: solid;
+    border-color: red
+}
+h1+h2{
+    letter-spacing: 5px;
+}
+td[colspan = "2"]{
+    font-size: small
+}
+p+p{
+    color: grey
+}
+body{
+    background-image: url(podloga.jfif); 
+    background-repeat: repeat-y
+}
+h1{ color: blue}
+h1{ color: green}

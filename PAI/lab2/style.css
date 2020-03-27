@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana;
+    font-size: 16px;
+    font-weight: 100;
+    text-decoration: none;
+    color: black;
+  }
+p {
+    margin: 0px;
+    padding: 0px;
+  }
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+html {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+  }
+header{
+    display:flex;
+    flex-direction: row;    
+    align-items: center;
+    padding: 30px;
+  }
+header h1{
+    font-size: 200%;
+    font-weight: bold;
+    margin-left: 15px;
+}
+header nav{
+    display: flex;
+    flex-grow: 2;
+    align-self: flex-start;
+    justify-content: flex-end;
+}
+header nav a{
+    width: 75px;
+}
+header nav img{
+    display: none;
+}
+header p{
+    background-color: lightgray;
+    border: 2px solid black;
+    border-width: 15%;
+    border-radius: 50%;
+    padding: 25px;
+    font-size: 50px;
+    font-weight: bold;
+}
+main{
+    display:flex;
+    flex-direction: row;
+    padding: 15px;
+  }
+main article{
+    margin: 15px;
+    width: 100%;
+    border: solid;
+    border-width: 2px;
+    border-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+main article h5{
+    margin-top: 0px;
+    height: 50px;
+    width: 50%;
+    font-size: 1.5em;
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    border-style: none none solid solid;
+    border-width: 2px;
+    border-color: black;
+    background-color: lightgray;
+}
+main article p{
+    text-align: justify;
+    padding: 15px;
+}
+footer{
+    height: 100px;
+    background-color: lightgray;
+    border-style: solid none none none;
+    border-color: black;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+footer p2{
+    font-weight: bold;
+}
+.Site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  
+.Site-content {
+    flex: 1;
+  }
+
+@media all and (max-width: 900px) {
+    main {
+    flex-wrap: wrap;
+    }
+    header nav a{
+        display: none;
+    }
+    header nav img{
+        display: block;
+        width: 50%;
+    }
+}
