@@ -1,0 +1,15 @@
+﻿@{ 
+    var rules = (List<string>)Session["rules"];
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <form action="Rules_redirect.cshtml" method="POST">
+        <input type="text" name="text">
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>

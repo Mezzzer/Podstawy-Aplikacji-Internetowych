@@ -1,0 +1,18 @@
+﻿@{
+    var rules = (List<string>)Session["rules"];
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <ul>
+        @for (int i = 0; i < rules.Count(); i++)
+        {
+            <li>@rules[i]</li>
+        }
+    </ul>
+    <a href="Rules_post.cshtml">Dodaj kolejna zasade</a>
+</body>
+</html>
